@@ -1,0 +1,19 @@
+mail-client/thunderbird -lightning -mozdom
+
+media-video/vlc -aom archive -aribsub -bluray -chromecast -dc1394 directx dvbpsi -encode -fluidsynth -gstreamer -kate libtar -libtiger -live -lua -macosx-notifications matroska mpeg -optimisememory -projectm -run-as-root skins -zvbi 
+
+media-sound/audacity midi sbsms twolame vamp 
+
+sys-apps/gnome-disk-utility fat
+
+app-office/libreoffice -googledrive
+
+app-editors/gedit -spell
+
+x11-base/xorg-server -minimal
+
+x11-libs/libdrm video_cards_radeon
+
+dev-lang/python tk
+
+games-util/lutris python_targets_python3_8
