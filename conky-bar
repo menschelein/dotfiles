@@ -1,0 +1,76 @@
+# **********************************************************************
+# "CPU Panel (4-core)" theme for Conky by Tony George (teejee2008@gmail.com)
+#
+# Webpage: http://teejeetech.blogspot.in/
+# **********************************************************************
+
+
+background yes
+double_buffer yes
+
+alignment bottom_left
+
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+gap_x 20
+gap_y 15
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+
+own_window yes
+own_window_type normal
+own_window_transparent no
+own_window_colour 333333
+own_window_argb_visual no
+own_window_argb_value 0
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+minimum_size 300 0
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+
+show_graph_scale no
+show_graph_range no
+
+use_xft yes
+xftalpha 0.1
+xftfont Droid Sans:size=12
+color0 white
+color1 EAEAEA
+color2 831518
+color3 grey
+
+minimum_size 300 0
+TEXT
+${font Enchanted Land:pixelsize=45}
+${offset 18}Raised from the Dead${font Ubuntu:pixelsize=14}
+${color 99221c}__________________________________________
+${font Ubuntu:pixelsize=18}
+${color 99221c}Kernel  ${offset 10}$color${sysname} ${kernel}
+${color 99221c}IP$color${offset 54}${addr wlp1s0}
+${color 99221c}HD${offset 46}$color${fs_free /} / ${fs_size /}
+${color 99221c}Up${offset 49}$color${upspeed wlp1s0}
+${upspeedgraph wlp1s0 40,}
+${color 99221c}Down${offset 24}$color${downspeed wlp1s0}
+${downspeedgraph wlp1s0 40,}
+${color 99221c}Swap${offset 28}$color${swap} / ${swapmax}
+${swapbar 40,}
+${color 99221c}RAM ${offset 29}$color$mem / $memmax${offset 30}
+${memgraph 40}
+${color2}CPU ${color0} ${cpu cpu0}%  ${color3}${cpubar cpu0 10,} 
+${cpugraph cpu0 80,300}${voffset -90}
+${font Ubuntu:size=12}${color2} ${freq_g (1)}GHz
+${voffset 100} 
