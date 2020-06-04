@@ -7,10 +7,10 @@
     (
       Internet,
       ("Mozilla Firefox", EXEC, firefox),
-      ("Tor Browser", EXEC, "/home/maxi/Dokumente/tor-browser_en-US"),
+      ("Tor Browser", EXEC, "gtk-launch start-tor-browser.desktop"),
       ("Telegram", EXEC, "telegram-desktop"),
       ("Zoom", EXEC, zoom),
-      ("Transmission", EXEC, zoom)
+      ("Transmission", EXEC, "transmission-gtk")
 
 ),
 
@@ -18,8 +18,6 @@
     (
       Office,
       ("Mozilla Thunderbird", EXEC, thunderbird),
-      ("Scanner", EXEC, "simple-scan"),
-      ("Drucker", EXEC, zoom),
       ("LibreOffice", EXEC, libreoffice),
 (Leafpad, EXEC, leafpad)
 
@@ -29,13 +27,12 @@
     (Multimedia, (Audacity, EXEC, audacity), (VLC, EXEC, vlc), (GIMP, EXEC, gimp)),
     
      (
-      System,
-      (Bleachbit, EXEC, bleachbit),
-      ("Bleachbit Root", EXEC, "sudo bleachbit"),
-      ("Grub bearbeiten", EXEC, "grub-customizer")
-    ),
+      Sonstige,
+(Lutris, EXEC, lutris),
+(Bleachbit, EXEC, bleachbit)
+    )
       
-(Spiele, EXEC, lutris)
+
   
    
   
