@@ -1,19 +1,12 @@
-mail-client/thunderbird -lightning -mozdom
-
-media-video/vlc -aom archive -aribsub -bluray -chromecast -dc1394 directx dvbpsi -encode -fluidsynth -gstreamer -kate libtar -libtiger -live -lua -macosx-notifications matroska mpeg -optimisememory -projectm -run-as-root skins -zvbi 
-
-media-sound/audacity midi sbsms twolame vamp 
-
-sys-apps/gnome-disk-utility fat
-
-app-office/libreoffice -googledrive
-
-app-editors/gedit -spell
-
-x11-base/xorg-server -minimal
-
-x11-libs/libdrm video_cards_radeon
-
-dev-lang/python tk
-
-games-util/lutris python_targets_python3_8
+media-libs/mesa -vaapi
+media-libs/vulkan-loader ABI_X86: 64 32
+media-libs/mesa vulkan ABI_X86: 64 32 wayland
+app-emulation/dxvk ABI_X86: 64 32
+app-admin/doas timestamp
+net-wireless/lorcon python
+dev-qt/qtgui dbus wayland
+media-sound/apulse sdk
+sys-libs/zlib static-libs
+dev-lang/python sqlite
+media-video/ffmpeg vpx theora
+net-libs/zeromq drafts
