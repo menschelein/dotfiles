@@ -9,19 +9,23 @@
 # Test for an interactive shell.  There is no need to set anything
 # past this point for scp and rcp, and it's important to refrain from
 # outputting anything in those cases.
-if [[ $- != *i* ]] ; then
-	# Shell is non-interactive.  Be done now!
-	return
+#if [[ $- != *i* ]] ; then
+#	# Shell is non-interactive.  Be done now!
+#	return
+#fi
+# start X if we are on tty1, and we just logged in
+if [ -z "$DISPLAY" ] && [ $(tty) == /dev/tty1 ]; then
+	   startx
 fi
-
 
 # Put your fun stuff here.
 #PS1='\A | \[\e[31m\]\u\[\e[m\]@\h: [\[\e[31m\]\w\[\e[m\]] '
-PS1='\[\e[m\]╭─\[ \A | \[\e[31m\]\u\[\e[m\]@\h: [\[\e[31m\]\w\[\e[m\]]\[\e[m\]\n╰──\[\e[31m\]❱ \[\e[m\]'
+PS1='\[\e[m\]╭─\[ \A | \[\e[36m\]\u\[\e[m\]@\h: [\[\e[36m\]\w\[\e[m\]]\[\e[m\]\n╰──\[\e[36m\]❱ \[\e[m\]'
 
 export VISUAL=vim;
 export EDITOR=vim;
 
+alias x='startx'
 alias f='figlet'
 alias kpd='figlet Fuer && figlet Frieden && figlet und && figlet Sozial- && figlet ismus!'
 alias data='doas ranger'
